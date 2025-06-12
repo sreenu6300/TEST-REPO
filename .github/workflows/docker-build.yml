@@ -18,7 +18,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker image from src/
-        run: docker build -t bwce-local-app ./bwce-demo/src
+        run: docker build -t bwce-local-app .github/workflows/bwce-demo/src
 
       - name: List Docker images
         run: docker images
